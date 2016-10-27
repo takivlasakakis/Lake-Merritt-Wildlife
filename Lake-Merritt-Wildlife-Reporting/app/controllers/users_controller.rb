@@ -1,20 +1,22 @@
 class UsersController < ApplicationController
-	def index	
-		@user = User.all	
+	def index
+		@users = User.all
 	end
 
-	def new		
+	def new
+		@user = User.new
 	end
 
-	def create			
+	def create
+		@user = User.new(params[:user])
 	end
 
-	def edit		
+	def edit
 	end
 
-	def update		
+	def update
 	end
 
-	def destroy		
+	def destroy
 	end
 end
